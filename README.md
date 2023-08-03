@@ -1,4 +1,8 @@
-# Dockerisation
+# KGM Nettilaji - Titeenien taistot 2023 Hosted by Digit ry
+Kadonneen Gambitin Metsästys nettipeli titeenit tapahtumaan. 
+Authors: Tijam Moradi & Hugo Hutri
+
+## Dockerisation
 
 ## Build using docker compose
 ```bash
