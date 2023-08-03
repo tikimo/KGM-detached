@@ -1,0 +1,11 @@
+require('./init');
+require('./disconnect');
+require('./get-lobbies');
+require('./join-lobby');
+require('./leave-lobby');
+require('./set-ready');
+require('./confirm-start-game');
+require('./start-game');
+require('./move');
+require('./get-spaces');
+require('./get-guildpoints');

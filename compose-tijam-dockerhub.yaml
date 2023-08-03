@@ -1,0 +1,39 @@
+services:
+  frontend:
+    image: tijam/kgm:front
+    container_name: kgm-ui
+    build:
+      context: client
+      dockerfile: Dockerfile
+    ports:
+      - 4200:4200
+    stdin_open: true
+    volumes:
+      - ./client:/usr/src/app
+      - /usr/src/app/node_modules
+    restart: always
+    networks:
+      - react-express
+    depends_on:
+      - backend
+
+  backend:
+    image: tijam/kgm:back
+    container_name: kgm-api
+    restart: always
+    build:
+      context: server
+      dockerfile: Dockerfile
+    volumes:
+      - ./server:/usr/src/app
+      - /usr/src/app/node_modules
+    networks:
+      - react-express
+    expose:
+      - 3086
+    ports:
+      - 3086:3086
+
+
+networks:
+  react-express:
