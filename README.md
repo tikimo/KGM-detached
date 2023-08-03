@@ -1,5 +1,6 @@
 # KGM Nettilaji - Titeenien taistot 2023 Hosted by Digit ry
 Kadonneen Gambitin Metsästys nettipeli titeenit tapahtumaan. 
+
 Authors: Tijam Moradi [@tikimo](https://github.com/tikimo) & Hugo Hutri [@hugohutri](https://github.com/hugohutri)
 
 ## Dockerisation
